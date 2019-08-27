@@ -1,0 +1,3 @@
+services:
+  Ewll\MysqlMessageBrokerBundle\MessageBroker:
+    arguments: ['@ewll.db.client.queue']
