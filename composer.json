@@ -16,7 +16,8 @@
     "symfony/http-kernel": "^4.3",
     "symfony/dependency-injection": "^4.3",
     "symfony/config": "^4.3",
-    "wrep/daemonizable-command": "^2.1"
+    "wrep/daemonizable-command": "^2.1",
+    "symfony/lock": "^4.3"
   },
   "autoload": {
     "psr-4": {

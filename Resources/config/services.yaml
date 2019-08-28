@@ -2,7 +2,6 @@ services:
   Ewll\MysqlMessageBrokerBundle\MessageBroker:
     arguments: ['@ewll.db.client.queue']
 
-
   Ewll\MysqlMessageBrokerBundle\AbstractDaemon:
     abstract: true
     calls:
