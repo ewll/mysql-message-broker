@@ -15,7 +15,8 @@
     "ewll/db-bundle": "^2.11",
     "symfony/http-kernel": "^4.3",
     "symfony/dependency-injection": "^4.3",
-    "symfony/config": "^4.3"
+    "symfony/config": "^4.3",
+    "wrep/daemonizable-command": "^2.1"
   },
   "autoload": {
     "psr-4": {

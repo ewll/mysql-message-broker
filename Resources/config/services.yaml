@@ -1,3 +1,10 @@
 services:
   Ewll\MysqlMessageBrokerBundle\MessageBroker:
     arguments: ['@ewll.db.client.queue']
+
+
+  Ewll\MysqlMessageBrokerBundle\AbstractDaemon:
+    abstract: true
+    calls:
+      - [setLogExtraDataKeeper, ['@App\Logger\LogExtraDataKeeper']]
+      - [setRepositoryProvider, ['@ewll.db.repository-provider']]

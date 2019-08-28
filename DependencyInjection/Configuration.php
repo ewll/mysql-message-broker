@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ewll_mysql-message-broker');
+        $rootNode = $treeBuilder->root('ewll_mysql_message_broker');
 
         $rootNode
             ->children()
