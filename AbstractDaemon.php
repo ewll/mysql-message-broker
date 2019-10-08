@@ -1,7 +1,7 @@
 <?php namespace Ewll\MysqlMessageBrokerBundle;
 
-use App\Logger\LogExtraDataKeeper;
 use Ewll\DBBundle\Repository\RepositoryProvider;
+use Ewll\LogExtraDataBundle\LogExtraDataKeeper;
 use Exception;
 use Symfony\Bridge\Monolog\Logger;
 use Symfony\Component\Console\Input\InputInterface;

@@ -5,5 +5,5 @@ services:
   Ewll\MysqlMessageBrokerBundle\AbstractDaemon:
     abstract: true
     calls:
-      - [setLogExtraDataKeeper, ['@App\Logger\LogExtraDataKeeper']]
+      - [setLogExtraDataKeeper, ['@Ewll\LogExtraDataBundle\LogExtraDataKeeper']]
       - [setRepositoryProvider, ['@ewll.db.repository-provider']]
