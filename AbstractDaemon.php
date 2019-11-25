@@ -6,7 +6,7 @@ use Exception;
 use Symfony\Bridge\Monolog\Logger;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Lock\Factory;
+use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\Store\FlockStore;
 use Wrep\Daemonizable\Command\EndlessCommand;
 
@@ -39,7 +39,7 @@ abstract class AbstractDaemon extends EndlessCommand
 
         if (!$this->isMultithread()) {
             $store = new FlockStore();
-            $factory = new Factory($store);
+            $factory = new LockFactory($store);
             $lock = $factory->createLock(md5(serialize($input->getArguments())));
 
             if (!$lock->acquire()) {
