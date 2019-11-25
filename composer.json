@@ -14,11 +14,11 @@
     "ext-json": "*",
     "ewll/db-bundle": "^2.11",
     "ewll/log-extra-data-bundle": "^1.0",
-    "symfony/http-kernel": "^4.3",
-    "symfony/dependency-injection": "^4.3",
-    "symfony/config": "^4.3",
+    "symfony/http-kernel": "^5",
+    "symfony/dependency-injection": "^5",
+    "symfony/config": "^5",
     "wrep/daemonizable-command": "^2.1",
-    "symfony/lock": "^4.3"
+    "symfony/lock": "^5"
   },
   "autoload": {
     "psr-4": {
